@@ -9,7 +9,7 @@ The command line is the place where you can give your computer text commands tha
 
 On your Mac, enter `command + spacebar` and type `Terminal` into the search bar. That will launch `Terminal.app`, which looks like this: 
 
-TERMINAL_LAUNCH_SS
+[Terminal launch screen shot](/screenshots/terminal_spotlight_ss.pngraw=true "Optional Title")
 
 There are ways to customize the way your Terminal looks, and many people use alternatives like [iTerm](https://www.iterm2.com/). It's up to you -- the world is your oyster! 
 
