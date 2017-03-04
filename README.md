@@ -3,7 +3,7 @@
  
 There are a lot of things anyone can do through the command line. But for reporters, there are some key commands and command line-based tools that can improve efficiency and make life a whole lot easier. Using the command line isn't coding in the way that writing in Python or Javascript or Ruby is, but it mastering the command line is a good introduction to that world and a step toward learning and using those languages.
 
-### First things first: What is the "command line"?
+## First things first: What is the "command line"?
 
 The command line is the place where you can give your computer text commands that your computer will then attempt to execute. Unlike a typical graphical user interface (GUI) — where you drag a cursor around with a mouse and click into folders and on applications to launch them — in the command line takes typed commands. You might think it's more efficient to use your mouse and click around to get into folders and launch apps, but once you get the hang of simple text commands to do everything from launching programs to working with files, you'll see how much more efficient the command line can be.
 
@@ -13,7 +13,7 @@ There are ways to customize the way your Terminal looks, and many people use alt
 
 Once you have the terminal launched, you'll see the date of the last time you launched the terminal, followed on the next line by the name of your computer, the location within that computer, and the user. In this case, my computer is called `adminlocals-MacBook-Pro`, I'm in my home directory (marked by the `~`) and my username is `avicens`. The dollar sign `$` is the prompt denoting that the system is ready for you to enter a command. 
 
-### Some basic navigation tips and quick commands
+## Some basic navigation tips and quick commands
 #### `man`, `pwd`, `cd`, `ls`, `cp`, `mv`, `cat`, `ctrl + a`, `ctrl + e`, `|`, `>`, `>>`, `clear`, *tab complete*
 Now that you have your Terminal app running, let's get the hang of some of the more basic commands and concepts:
 
@@ -47,7 +47,7 @@ Now that you have your Terminal app running, let's get the hang of some of the m
 
 *tab complete*: After you begin typing any file name or command, you can hit `tab` to autocomplete the name of said file or command up until the end of uniqueness. That will come in handy when you want to cat a file named `ohMyGodThisIsALongFileName.txt`.
 
-#### Here are some commands I use all the time
+## Here are some commands I use all the time
 
 The great thing about using the command line is that there are a whole host of quick commands at your fingertips that can save you time. Here are some commands I find myself using frequently:
 
@@ -59,7 +59,7 @@ The great thing about using the command line is that there are a whole host of q
 
 `grep`: This is an [incredibly powerful](https://www.eriwen.com/tools/grep-is-a-beautiful-tool/) search tool -- technically "global regular expression print" -- that allows searching for patterns and specifics across many files or directories at once. Take it for a spin and get used to it.
 
-#### Let's quickly run through creating directories and files (and then removing them)
+## Let's quickly run through creating directories and files (and then removing them)
 
 Hopefully you're starting to understand that the modest little Terminal app that comes on every Mac can do a lot of very useful things (and we haven't even scratched the surface). Now, let's quickly run through creating directories, files within the directories, and then removing them (while mixing in a couple of the commands from above).
 
@@ -79,7 +79,7 @@ Let's get out of our `QuickTest` directory with `cd ..`. Now let's remove that f
 
 That was just a quick example to show how we can create directories, files, files within directories, and then remove them. 
 
-  #### Command line tools I use almost every day
+## Command line tools I use almost every day
 
 The beautiful thing about the command line is the plethora of tools out there that can make your life much easier. These require installation, but typically that's not that hard. Here are a few I use all the time: 
 
@@ -89,7 +89,7 @@ The beautiful thing about the command line is the plethora of tools out there th
 
 `csvkit`: This is an amazing Python-based tool to help you work with CSV files on the command line. Written by [Chris Groskopf](https://twitter.com/onyxfish), CSVKit is a great way to get a handle on the data you have in a given spreadsheet, clean it up a bit, and get your story jumpstarted. I use this all the time and recommend it so highly that I think we'll run through a quick tutorial. Keep in mind that Chris writes extensive documentation for all of his tools, so please do head over to the [tutorial he's written](https://csvkit.readthedocs.io/en/1.0.1/). I'll provide an incredibly abridged version below: 
 
-#### Let's jump in to CSVKit.
+## Let's jump in to CSVKit.
 For my quick tutorial we'll be using crime data from the city of Pittsburgh. The data set includes various codes used by the city, location data, crime codes, and other information that could come in handy depending on what you're trying to do. You could always open Excel to peek at your data. 
 
 Let's compare that to a quick peek from CSVKit. Type `csvlook nic[tab complete]`. Ack. Not so good. Let's clean that up a bit by piping the output of that command into a `less -S` command, which allows us to look at the data one page at a time. With `-S` we cut the lines off at the width of our terminal window, so we can organize things a bit. You can see the left and right arrows to take see the full rows. Hit `q` to get out of that view.
@@ -116,7 +116,7 @@ Again, this data needs to be vetted, checked against your sources, and treated w
 
 This was a *very* basic runthrough of what CSVKit can do. I would highly recommend running through [the full CSVKit tutorial](https://csvkit.readthedocs.io/en/1.0.1/tutorial.html) which will introduce you to more powerful tools available, including merging datasets, running SQL queries, and getting your data into a web-ready format.
 
-# Resources
+## Resources
 It's really not that hard to pick up some command line skills. Just like anything else, if you mess around with it and use it when you can you'll start to get the hang of it. Here are several handy places to learn:
 
 * [Codeacademy](https://www.codecademy.com/learn/learn-the-command-line)  
