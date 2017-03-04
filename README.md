@@ -7,7 +7,7 @@ There are a lot of things anyone can do through the command line. But for report
 
 The command line is the place where you can give your computer text commands that your computer will then attempt to execute. Unlike a typical graphical user interface (GUI) — where you drag a cursor around with a mouse and click into folders and on applications to launch them — in the command line takes typed commands. You might think it's more efficient to use your mouse and click around to get into folders and launch apps, but once you get the hang of simple text commands to do everything from launching programs to working with files, you'll see how much more efficient the command line can be.
 
-On your Mac, enter `command + spacebar` and type `Terminal` into the search bar. That will launch `Terminal.app`, which looks like this: 
+On your Mac, enter `command + spacebar` and type `Terminal` into the search bar. That will launch `Terminal.app`.
 
 [Terminal launch screen shot](/screenshots/terminal_spotlight_ss.pngraw=true "Optional Title")
 
@@ -92,25 +92,17 @@ The beautiful thing about the command line is the plethora of tools out there th
 `csvkit`: This is an amazing Python-based tool to help you work with CSV files on the command line. Written by [Chris Groskopf](https://twitter.com/onyxfish), CSVKit is a great way to get a handle on the data you have in a given spreadsheet, clean it up a bit, and get your story jumpstarted. I use this all the time and recommend it so highly that I think we'll run through a quick tutorial. Keep in mind that Chris writes extensive documentation for all of his tools, so please do head over to the [tutorial he's written](https://csvkit.readthedocs.io/en/1.0.1/). I'll provide an incredibly abridged version below: 
 
 #### Let's jump in to CSVKit.
-For my quick tutorial we'll be using crime data from the city of Pittsburgh. The data set includes various codes used by the city, location data, crime codes, and other information that could come in handy depending on what you're trying to do. You could always open Excel to peek at your data: 
-
-SCREENSHOT
+For my quick tutorial we'll be using crime data from the city of Pittsburgh. The data set includes various codes used by the city, location data, crime codes, and other information that could come in handy depending on what you're trying to do. You could always open Excel to peek at your data. 
 
 Let's compare that to a quick peek from CSVKit. Type `csvlook nic[tab complete]`. Ack. Not so good. Let's clean that up a bit by piping the output of that command into a `less -S` command, which allows us to look at the data one page at a time. With `-S` we cut the lines off at the width of our terminal window, so we can organize things a bit. You can see the left and right arrows to take see the full rows. Hit `q` to get out of that view.
 
-SCREENSHOT
-
 OK, now we're getting somewhere. We can cleanly see what we're working with, but scrolling back and forth is a bit annoying. Let's pare this down a bit. How about we start by listing out the columns. Enter `csvcut -n nic[tab complete]`. 
-
-SCREENSHOT
 
 For our purposes, we probably don't need all 19 of these columns. Let's just ride with `Date`, `Time`, `Zip_Code`, `Neighborhood`, `Police_Zone`, `Incident_Description`, `Council_District`. Luckily CSVKit makes this very simple with the `csvcut` command using either the column numbers or the column names. Let's go with column numbers for now. So enter `csvcut -c 6,7,9,11,12,13,16 nic[tab complete]`.
 
 Notice what happens? Your computer is doing exactly what you're telling it to do: Cutting those columns from the original data set and printing them to the terminal window. We'd probably prefer those new columns are available to us in a new sheet. Using the `>` redirection command from above, let's take the previous command and use it to create a new CSV. Enter `csvcut -c 6,7,9,11,12,13,16 nicar17_unix.csv > pgh_crime_trimmed.csv`. If you enter the command and nothing happens, that's good! Now try `csvcut -n` on our new CSV, `pgh[tab complete]`.
 
 Ah ha! Now we're down to seven columns. That's a bit more manageable. Let's run some basic stats on these columns with the `csvstat` command. So, `csvstat pgh[tab complete].` This command quickly summarizes the data in our columns, giving us a quick overview of what we're working with. The `Date` and `Time` stats are all pretty similar, so that's not all that interesting in and of itself. But take a look at the `Zip_Code` data. 
-
-SCREENSHOT
 
 What's going on in 15212? The rest of the top five zips are roughly similar, but that one is significantly higher.  There are also noticeable leaders in `Neighborhood` (South Side Flats), `Police_Zone` (3), and perhaps the `Council_District` as well. 
 
