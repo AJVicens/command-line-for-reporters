@@ -48,6 +48,8 @@ Now that you have your Terminal app running, let's get the hang of some of the m
 
 *tab complete*: After you begin typing any file name or command, you can hit `tab` to autocomplete the name of said file or command up until the end of uniqueness. That will come in handy when you want to cat a file named `ohMyGodThisIsALongFileName.txt`.
 
+`ctr-C`: If at any point things hang up, using `ctrl-C` will quit whatever you're doing and exit whatever command the computer is trying to execute.
+
 #### Here are some commands I use all the time
 
 The great thing about using the command line is that there are a whole host of quick commands at your fingertips that can save you time. Here are some commands I find myself using frequently:
@@ -97,7 +99,7 @@ The data set includes various codes used by the city, location data, crime codes
 
 SCREENSHOT
 
-Let's compare that to a quick peek from CSVKit. Type `csvlook nic[tab complete]`. Ack. Not so good. Let's clean that up a bit by piping the output of that command into a `less -S` command, which allows us to look at the data one page at a time. With `-S` we cut the lines off at the width of our terminal window, so we can organize things a bit. You can see the left and right arrows to take see the full rows. Hit `q` to get out of that view.
+Let's compare that to a quick peek from CSVKit. Type `csvlook nic[tab complete]`. Ack. Not so good. Let's clean that up a bit by piping the output of that command into a `less -S` command, which allows us to look at the data one page at a time. With `-S` we cut the lines off at the width of our terminal window, so we can organize things a bit. So you're going to type in `csvlook nic[tab complete] | less -S`. You can see the left and right arrows to take see the full rows. Hit `q` to get out of that view.
 
 SCREENSHOT
 
