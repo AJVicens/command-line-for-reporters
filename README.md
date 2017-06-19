@@ -82,7 +82,7 @@ That was just a quick example to show how we can create directories, files, file
 
   #### Command line tools I use almost every day
 
-The beautiful thing about the command line is the plethora of tools out there that can make your life much easier. These require installation, but typically that's not that hard. Here are a few I use all the time: 
+The beautiful thing about the command line is the plethora of tools out there that can make your life much easier. ***These require installation***, but typically that's not that hard. Here are a few I use all the time: 
 
 `youtube-dl`: This handy little guy will allow you to rip videos from YouTube and a whole host of other streaming sites. [Go check them out](https://rg3.github.io/youtube-dl/).
 
