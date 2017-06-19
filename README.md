@@ -5,7 +5,7 @@ There are a lot of things anyone can do through the command line. But for report
 
 ### First things first: What is the "command line"?
 
-The command line is the place where you can give your computer text commands that your computer will then attempt to execute. Unlike a typical graphical user interface (GUI) — where you drag a cursor around with a mouse and click into folders and on applications to launch them — in the command line takes typed commands. You might think it's more efficient to use your mouse and click around to get into folders and launch apps, but once you get the hang of simple text commands to do everything from launching programs to working with files, you'll see how much more efficient the command line can be.
+The command line is the place where you can give your computer text commands that your computer will then attempt to execute. Unlike a typical graphical user interface (GUI) — where you drag a cursor around with a mouse and click into folders and on applications to launch them — the command line takes typed commands. You might think it's more efficient to use your mouse and click around to get into folders and launch apps, but once you get the hang of simple text commands to do everything from launching programs to working with files, you'll see how much more efficient the command line can be.
 
 On your Mac, enter `command + spacebar` and type `Terminal` into the search bar. That will launch `Terminal.app`.
 
