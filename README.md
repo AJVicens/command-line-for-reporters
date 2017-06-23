@@ -9,6 +9,8 @@ The command line is the place where you can give your computer text commands tha
 
 On your Mac, enter `command + spacebar` and type `Terminal` into the search bar. That will launch `Terminal.app`.
 
+![spotlight screenshot](https://user-images.githubusercontent.com/6118900/27491446-3c2236ec-57f7-11e7-94f0-c974d22b9d66.png)
+
 There are ways to customize the way your Terminal looks, and many people use alternatives like [iTerm](https://www.iterm2.com/). It's up to you -- the world is your oyster! 
 
 Once you have the terminal launched, you'll see the date of the last time you launched the terminal, followed on the next line by the name of your computer, the location within that computer, and the user. In this case, my computer is called `adminlocals-MacBook-Pro`, I'm in my home directory (marked by the `~`) and my username is `avicens`. The dollar sign `$` is the prompt denoting that the system is ready for you to enter a command. 
@@ -113,7 +115,7 @@ Notice what happens? Your computer is doing exactly what you're telling it to do
 
 Ah ha! Now we're down to seven columns. That's a bit more manageable. Let's run some basic stats on these columns with the `csvstat` command. So, `csvstat pgh[tab complete].` This command quickly summarizes the data in our columns, giving us a quick overview of what we're working with. The `Date` and `Time` stats are all pretty similar, so that's not all that interesting in and of itself. But take a look at the `Zip_Code` data. 
 
-SCREENSHOT
+![zipcode screenshot](https://user-images.githubusercontent.com/6118900/27492009-728e665e-57f9-11e7-9aed-d74cf5590be6.png)
 
 What's going on in 15212? The rest of the top five zips are roughly similar, but that one is significantly higher.  There are also noticeable leaders in `Neighborhood` (South Side Flats), `Police_Zone` (3), and perhaps the `Council_District` as well. 
 
