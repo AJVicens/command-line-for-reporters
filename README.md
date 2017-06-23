@@ -97,7 +97,7 @@ For my quick tutorial we'll be using crime data from the city of Pittsburgh. The
 
 The data set includes various codes used by the city, location data, crime codes, and other information that could come in handy depending on what you're trying to do. You could always open Excel to peek at your data: 
 
-[https://user-images.githubusercontent.com/6118900/27491390-10835980-57f7-11e7-9545-fbba8c5c6929.png]
+(https://user-images.githubusercontent.com/6118900/27491390-10835980-57f7-11e7-9545-fbba8c5c6929.png)
 
 Let's compare that to a quick peek from CSVKit. Type `csvlook nic[tab complete]`. Ack. Not so good. Let's clean that up a bit by piping the output of that command into a `less -S` command, which allows us to look at the data one page at a time. With `-S` we cut the lines off at the width of our terminal window, so we can organize things a bit. So you're going to type in `csvlook nic[tab complete] | less -S`. You can see the left and right arrows to see the full rows. Hit `q` to get out of that view.
 
