@@ -95,7 +95,7 @@ The beautiful thing about the command line is the plethora of tools out there th
 `csvkit`: This is an amazing Python-based tool to help you work with CSV files on the command line. Written by [Chris Groskopf](https://twitter.com/onyxfish), CSVKit is a great way to get a handle on the data you have in a given spreadsheet, clean it up a bit, and get your story jumpstarted. I use this all the time and recommend it so highly that I think we'll run through a quick tutorial. Keep in mind that Chris writes extensive documentation for all of his tools, so please do head over to the [tutorial he's written](https://csvkit.readthedocs.io/en/1.0.1/). I'll provide an incredibly abridged version below: 
 
 #### Let's jump in to CSVKit.
-For my quick tutorial we'll be using crime data from the city of Pittsburgh. The file we'll start with is called [nicar17_unix.csv](https://github.com/AJVicens/favcommandlinetools/blob/master/nicar17_unix.csv). To get the raw data, click on the file name in the main repo, click `Raw` to get the raw data, and then save-as with whatever file name you want in the `.csv` format.
+For my quick tutorial we'll be using crime data from the city of Pittsburgh. The file we'll start with is called [ire_18.csv](https://github.com/AJVicens/favcommandlinetools/blob/master/nicar17_unix.csv). To get the raw data, click on the file name in the main repo, click `Raw` to get the raw data, and then save-as with whatever file name you want in the `.csv` format.
 
 The data set includes various codes used by the city, location data, crime codes, and other information that could come in handy depending on what you're trying to do. You could always open Excel to peek at your data: 
 
