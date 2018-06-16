@@ -64,6 +64,16 @@ The great thing about using the command line is that there are a whole host of q
 
 `grep`: This is an [incredibly powerful](https://www.eriwen.com/tools/grep-is-a-beautiful-tool/) search tool -- technically "global regular expression print" -- that allows searching for patterns and specifics across many files or directories at once. Take it for a spin and get used to it.
 
+#### Command line tools I use almost every day
+
+The beautiful thing about the command line is the plethora of tools out there that can make your life much easier. ***These require installation***, but typically that's not that hard. Here are a few I use all the time: 
+
+`youtube-dl`: This handy little guy will allow you to rip videos from YouTube and a whole host of other streaming sites. [Go check them out](https://rg3.github.io/youtube-dl/).
+
+`ffmpeg`: There's another tool out there called `ffmpeg` that can work wonders with audio and video (streaming or at rest). I've only just scratched the surface with it and it's already streamlined my workflow. [Try it](https://ffmpeg.org/).
+
+`csvkit`: This is an amazing Python-based tool to help you work with CSV files on the command line. Written by [Chris Groskopf](https://twitter.com/onyxfish), CSVKit is a great way to get a handle on the data you have in a given spreadsheet, clean it up a bit, and get your story jumpstarted. I use this all the time and recommend it so highly that I think we'll run through a quick tutorial. Keep in mind that Chris writes extensive documentation for all of his tools, so please do head over to the [tutorial he's written](https://csvkit.readthedocs.io/en/1.0.1/). I'll provide an incredibly abridged version below.
+
 #### Let's quickly run through creating directories and files (and then removing them)
 
 Hopefully you're starting to understand that the modest little Terminal app that comes on every Mac can do a lot of very useful things (and we haven't even scratched the surface). Now, let's quickly run through creating directories, files within the directories, and then removing them (while mixing in a couple of the commands from above).
@@ -83,16 +93,6 @@ Now, type cat tes[tab complete]. What do you get? You should see whatever text y
 Let's get out of our `QuickTest` directory with `cd ..`. Now let's remove that folder with the `rmdir` command. So enter `rmdir Qui[tab complete].`
 
 That was just a quick example to show how we can create directories, files, files within directories, and then remove them. 
-
-  #### Command line tools I use almost every day
-
-The beautiful thing about the command line is the plethora of tools out there that can make your life much easier. ***These require installation***, but typically that's not that hard. Here are a few I use all the time: 
-
-`youtube-dl`: This handy little guy will allow you to rip videos from YouTube and a whole host of other streaming sites. [Go check them out](https://rg3.github.io/youtube-dl/).
-
-`ffmpeg`: There's another tool out there called `ffmpeg` that can work wonders with audio and video (streaming or at rest). I've only just scratched the surface with it and it's already streamlined my workflow. [Try it](https://ffmpeg.org/).
-
-`csvkit`: This is an amazing Python-based tool to help you work with CSV files on the command line. Written by [Chris Groskopf](https://twitter.com/onyxfish), CSVKit is a great way to get a handle on the data you have in a given spreadsheet, clean it up a bit, and get your story jumpstarted. I use this all the time and recommend it so highly that I think we'll run through a quick tutorial. Keep in mind that Chris writes extensive documentation for all of his tools, so please do head over to the [tutorial he's written](https://csvkit.readthedocs.io/en/1.0.1/). I'll provide an incredibly abridged version below: 
 
 #### Let's jump in to CSVKit.
 For my quick tutorial we'll be using crime data from the city of Pittsburgh. The file we'll start with is called [ire_18.csv](https://github.com/AJVicens/favcommandlinetools/blob/master/nicar17_unix.csv). To get the raw data, click on the file name in the main repo, click `Raw` to get the raw data, and then save-as with whatever file name you want in the `.csv` format.
