@@ -101,7 +101,7 @@ The data set includes various codes used by the city, location data, crime codes
 
 ![excel screenshot](https://user-images.githubusercontent.com/6118900/27491390-10835980-57f7-11e7-9545-fbba8c5c6929.png)
 
-Let's compare that to a quick peek from CSVKit. Type `csvlook nic[tab complete]`. Ack. Not so good. Let's clean that up a bit by piping the output of that command into a `less -S` command, which allows us to look at the data one page at a time. With `-S` we cut the lines off at the width of our terminal window, so we can organize things a bit. So you're going to type in `csvlook nic[tab complete] | less -S`. You can see the left and right arrows to see the full rows. Hit `q` to get out of that view.
+Let's compare that to a quick peek from CSVKit. Type `csvlook nic[tab complete]`. Ack. Not so good. Let's clean that up a bit by piping the output of that command into a `less -S` command, which allows us to look at the data one page at a time. With `-S` we cut the lines off at the width of our terminal window, so we can organize things a bit. So you're going to type in `PYTHONIOENCODING=utf8 csvlook ire[tab complete] | less -S`. You can see the left and right arrows to see the full rows. Hit `q` to get out of that view.
 
 ![csvlook screenshot](https://user-images.githubusercontent.com/6118900/27491440-37aebdd8-57f7-11e7-8e15-3829db04822a.png)
 
