@@ -15,7 +15,7 @@ There are ways to customize the way your Terminal looks, and many people use alt
 
 Once you have the terminal launched, you'll see the date of the last time you launched the terminal, followed on the next line by the name of your computer, the location within that computer, and the user. In this case, my computer is called `AJs-MacBook-Pro`, I'm in my home directory (marked by the `~`) and my username is `avicens`. The dollar sign `$` is the prompt denoting that the system is ready for you to enter a command.
 
-PUT IN A SCREENSHOT OF THE NEW TERMINAL
+![terminal screenshot]()
 
 ### Some basic navigation tips and quick commands
 #### `man`, `pwd`, `cd`, `ls`, `cp`, `mv`, `cat`, `ctrl + a`, `ctrl + e`, `|`, `>`, `>>`, `clear`, *tab complete*
