@@ -1,19 +1,21 @@
 # Favorite Command Line Tools
-### Command line for reporters (Unix) 
- 
-There are a lot of things anyone can do through the command line. But for reporters, there are some key commands and command line-based tools that can improve efficiency and make life a whole lot easier. Using the command line isn't coding in the way that writing in Python or Javascript or Ruby is, but mastering the command line is a good introduction to that world and a step toward learning and using those languages.
+### Command line for reporters (Unix)
+
+There are a lot of things anyone can do through the command line. But for reporters there are some key commands and command line-based tools that can improve efficiency and make life a whole lot easier. Using the command line isn't coding in the way that writing in Python or Javascript or Ruby is, but mastering the command line is a good introduction to that world and a step toward learning and using those languages.
 
 ### First things first: What is the "command line"?
 
-The command line is the place where you can give your computer text commands that your computer will then attempt to execute. Unlike a typical graphical user interface (GUI) — where you drag a cursor around with a mouse and click into folders and on applications to launch them — the command line takes typed commands. You might think it's more efficient to use your mouse and click around to get into folders and launch apps, but once you get the hang of simple text commands to do everything from launching programs to working with files, you'll see how much more efficient the command line can be.
+The command line is the place where you can give your computer text commands that your computer will then attempt to execute. Unlike a typical graphical user interface (GUI) -- where you drag a cursor around with a mouse and click into folders and on applications to launch them —- the command line takes typed commands. You might think it's more efficient to use your mouse and click around to get into folders and launch apps, but once you get the hang of simple text commands to do everything from launching programs to working with files, you'll see how much more efficient the command line can be.
 
 On your Mac, enter `command + spacebar` and type `Terminal` into the search bar. That will launch `Terminal.app`.
 
 ![spotlight screenshot](https://user-images.githubusercontent.com/6118900/27491446-3c2236ec-57f7-11e7-94f0-c974d22b9d66.png)
 
-There are ways to customize the way your Terminal looks, and many people use alternatives like [iTerm](https://www.iterm2.com/). It's up to you -- the world is your oyster! 
+There are ways to customize the way your Terminal looks, and many people use alternatives like [iTerm](https://www.iterm2.com/). It's up to you -- the world is your oyster!
 
-Once you have the terminal launched, you'll see the date of the last time you launched the terminal, followed on the next line by the name of your computer, the location within that computer, and the user. In this case, my computer is called `adminlocals-MacBook-Pro`, I'm in my home directory (marked by the `~`) and my username is `avicens`. The dollar sign `$` is the prompt denoting that the system is ready for you to enter a command. 
+Once you have the terminal launched, you'll see the date of the last time you launched the terminal, followed on the next line by the name of your computer, the location within that computer, and the user. In this case, my computer is called `AJs-MacBook-Pro`, I'm in my home directory (marked by the `~`) and my username is `avicens`. The dollar sign `$` is the prompt denoting that the system is ready for you to enter a command.
+
+PUT IN A SCREENSHOT OF THE NEW TERMINAL
 
 ### Some basic navigation tips and quick commands
 #### `man`, `pwd`, `cd`, `ls`, `cp`, `mv`, `cat`, `ctrl + a`, `ctrl + e`, `|`, `>`, `>>`, `clear`, *tab complete*
@@ -23,11 +25,11 @@ Now that you have your Terminal app running, let's get the hang of some of the m
 
 `pwd`: This command tells the computer to `print working directory`, which is another way of saying "tell me where I am in my computer system." You'll use this a lot to figure out where you are, especially when you start moving around with...
 
-`cd`: ...this command, which means `change directory`. This command can move you from one directory to another. If I was in `Users/avicens` and I wanted to get to my `Desktop`, I'd type `cd Desktop`. If I want to move up one level, I'd type `cd ..`, and if I wanted to move two levels up, I'd type `cd ../..`. By default, a Unix system will start you in your `home` directory (represented typically by a `~`). 
+`cd`: ...this command, which means `change directory`. This command can move you from one directory to another. If I was in `Users/avicens` and I wanted to get to my `Desktop`, I'd type `cd Desktop`. If I want to move up one level, I'd type `cd ..`, and if I wanted to move two levels up, I'd type `cd ../..`. By default, a Unix system will start you in your `home` directory (represented typically by a `~`).
 
 `ls`: This command will list all* of the files and directories in a directory. So if you type `pwd` to figure out where you are, you can use `ls` to see what files and directories are in your current working directory. This command has a whole host of options, so type `man ls` to get the full scope.
 
-**There are some files known as "hidden files" -- files that typically start with a `.` that are [used](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory) to store user preferences or perform other functions -- that won't show up with a basic `ls` command. To see those files, type `ls -a`.*
+**There are some files known as "hidden files" -- files that typically start with a `.` that are [used](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory) to store user preferences or perform other functions -- that won't show up with a basic `ls` command. To see those files, type `ls -a`.**
 
 `cp` `original_file` `new_file`: This command will copy a file. It's a good idea to use a distinct name for the file's copy, because if it a file already exists with that name, the file you're creating will overwite that file.
 
@@ -37,12 +39,13 @@ Now that you have your Terminal app running, let's get the hang of some of the m
 
 `ctrl + a`: Go to the start of a line.
 
-`ctrl + e`: Go to the end of a line. 
+`ctrl + e`: Go to the end of a line.
 
 `|`: This vertical line -- known as a "pipe" and found on the same key as the backslash -- will send the output of one command into another. This will become very useful.
 
 `>`: Redirect the output of a command to a file. Say I wanted to make a list of everything on my Desktop. I would simply navigate to my Desktop,* and type `ls > desktop.txt`. Of course, this can get much more complex and help you perform complicated tasks, but this is the basic concept.
-**You don't have to be in a given directory to do things involving that directory. Once you understand how the directories are nested, you can access them from anywhere by typing the [relative or absolute path](http://docstore.mik.ua/orelly/unix/upt/ch14_02.htm) to that directory.*
+
+**You don't have to be in a given directory to do things involving that directory. Once you understand how the directories are nested, you can access them from anywhere by typing the [relative or absolute path](http://docstore.mik.ua/orelly/unix/upt/ch14_02.htm) to that directory.**
 
 `>>`: Append one file to another (see the `cat` example above).
 
@@ -50,23 +53,25 @@ Now that you have your Terminal app running, let's get the hang of some of the m
 
 *tab complete*: After you begin typing any file name or command, you can hit `tab` to autocomplete the name of said file or command up until the end of uniqueness. That will come in handy when you want to cat a file named `ohMyGodThisIsALongFileName.txt`.
 
-`ctr-C`: If at any point things hang up, using `ctrl-C` will quit whatever you're doing and exit whatever command the computer is trying to execute.
+`ctl-C`: If at any point things hang up, using `ctrl-C` will quit whatever you're doing and exit whatever command the computer is trying to execute.
 
 #### Here are some commands I use all the time
 
 The great thing about using the command line is that there are a whole host of quick commands at your fingertips that can save you time. Here are some commands I find myself using frequently:
 
-`cal`: For some reason I find myself often having to check what day of the week a particular date was. Luckly `cal` can do that for you. If you enter it without any options, it'll display the current month. But it can also dispaly months or full years worth of dates when you enter `cal [month (number)] [year (number)]`. So what day of the week was Mozart born if his birthday is January 27, 1756? Enter `cal 1 1756` and get your answer (it was a Tuesday). If we wanted that full year's calendar, we'd enter `cal 1756`. Take a look at [September of 1752](http://unix.stackexchange.com/questions/17903/is-cal-broken-what-happened-in-september-1752) for a laugh.
+`cal`: For some reason I find myself often having to check what day of the week a particular date was. Luckily `cal` can do that for you. If you enter it without any options, it'll display the current month. But it can also display months or full years worth of dates when you enter `cal [month (number)] [year (number)]`. So what day of the week was Mozart born if his birthday is January 27, 1756? Enter `cal 1 1756` and get your answer (it was a Tuesday). If we wanted that full year's calendar, we'd enter `cal 1756`. Take a look at [September of 1752](http://unix.stackexchange.com/questions/17903/is-cal-broken-what-happened-in-september-1752) for a laugh.
 
-`whois`: Many of us know how to look up the owner of a given website domain using the [Whois](https://www.whois.net/) service. Luckily for us, that command is built in to the command line. Enter `whois [domain]` (without the https:// or www). You won't always get all the information you're after, but in many cases you'll get some good information. And, using the `>` command from above, you can send results to a file. So that'd be `whos [website domain] > [filename].txt`.
+`whois`: Many of us know how to look up the owner of a given website domain using the [Whois](https://www.whois.net/) service. Luckily for us that command is built in to the command line. Enter `whois [domain]` (without the https:// or www). You won't always get all the information you're after but in some cases you'll get some good information. And, using the `>` command from above, you can send results to a file. So that'd be `whois [website domain] > [filename].txt`.
 
 `wc`: This is a handy little tool for counting words in a document, or lines (rows in a csv), the number of bytes, and more. Without any flags `wc` will give you three numbers: the number of lines, the number of words, and the number of bytes. With text files (especially story drafts) I usually want to know the number of words, so I use `wc -w`. When I'm working with CSV files, you may want to check the number of rows. In that case, use `wc -l`.
 
 `grep`: This is an [incredibly powerful](https://www.eriwen.com/tools/grep-is-a-beautiful-tool/) search tool -- technically "global regular expression print" -- that allows searching for patterns and specifics across many files or directories at once. Take it for a spin and get used to it.
 
+At NICAR 2019 I learned of a neat command line tool called [dkimpy](https://launchpad.net/dkimpy) that allows a user to verify the authenticity of emails with one command ([read more here](https://www.propublica.org/nerds/authenticating-email-using-dkim-and-arc-or-how-we-analyzed-the-kasowitz-emails) via ProPublica's Jeremy B. Merrill).
+
 #### Command line tools I use almost every day
 
-The beautiful thing about the command line is the plethora of tools out there that can make your life much easier. ***These require installation***, but typically that's not that hard. Here are a few I use all the time: 
+The beautiful thing about the command line is the plethora of tools out there that can make your life much easier. ***These require installation***, but typically that's not that hard. Here are a few I use all the time:
 
 `youtube-dl`: This handy little guy will allow you to rip videos from YouTube and a whole host of other streaming sites. [Go check them out](https://rg3.github.io/youtube-dl/).
 
@@ -82,7 +87,7 @@ Start with navigating to your Desktop: `cd ~/Desktop`
 
 Now, let's create a directory to work in with the `mkdir` command. The way this works is you enter the command and then name the directory. So let's just go with `mkdir QuickTest`.
 
-Now `cd Qui[tab complete]` (you should notice that the Terminal will fill in the rest of the name). Enter `ls`. What do you see? It should be nothing. 
+Now `cd Qui[tab complete]` (you should notice that the Terminal will fill in the rest of the name). Enter `ls`. What do you see? It should be nothing.
 
 Now, let's create a file with the `touch` command. So, enter `touch testFile.txt`. If you did it right, you'll hit enter and then nothing will happen. That's good!
 
@@ -92,42 +97,50 @@ Now, type cat tes[tab complete]. What do you get? You should see whatever text y
 
 Let's get out of our `QuickTest` directory with `cd ..`. Now let's remove that folder with the `rmdir` command. So enter `rmdir Qui[tab complete].`
 
-That was just a quick example to show how we can create directories, files, files within directories, and then remove them. 
+That was just a quick example to show how we can create directories, files, files within directories, and then remove them.
 
 #### Let's jump in to CSVKit.
-For my quick tutorial we'll be using crime data from the city of Pittsburgh. The file we'll start with is called [ire_18.csv](https://github.com/AJVicens/favcommandlinetools/blob/master/nicar17_unix.csv). To get the raw data, click on the file name in the main repo, click `Raw` to get the raw data, and then save-as with whatever file name you want in the `.csv` format.
+For my quick tutorial we'll be using CDC data listing the age-adjusted death rates for the leading causes of death in the US between 1999 and 2016 [see more here](https://healthdata.gov/dataset/nchs-leading-causes-death-united-states). The file we'll start with is called [NEW NAME FOR DATA SET](ENTER UPLOAD URL FOR NEW DATA SET). To get the raw data, click on the file name in the main repo, click `Raw` to get the raw data, and then save-as with whatever file name you want in the `.csv` format.
 
-The data set includes various codes used by the city, location data, crime codes, and other information that could come in handy depending on what you're trying to do. You could always open Excel to peek at your data: 
+The data set breaks down the rates by leading causes of death by state by year. You could always open Excel to peek at your data:
 
-![excel screenshot](https://user-images.githubusercontent.com/6118900/27491390-10835980-57f7-11e7-9545-fbba8c5c6929.png)
+![excel screenshot](NEED NEW SCREENSHOT LINK)
 
-Let's compare that to a quick peek from CSVKit. Type `csvlook nic[tab complete]`. Ack. Not so good. Let's clean that up a bit by piping the output of that command into a `less -S` command, which allows us to look at the data one page at a time. With `-S` we cut the lines off at the width of our terminal window, so we can organize things a bit. So you're going to type in `PYTHONIOENCODING=utf8 csvlook ire[tab complete] | less -S`. You can see the left and right arrows to see the full rows. Hit `q` to get out of that view.
+Let's compare that to a quick peek from CSVKit. Type `csvlook nic[tab complete]`.
 
-![csvlook screenshot](https://user-images.githubusercontent.com/6118900/27491440-37aebdd8-57f7-11e7-8e15-3829db04822a.png)
+[ADD IN SCREENSHOT OF CSVLOOK]
 
-OK, now we're getting somewhere. We can cleanly see what we're working with, but scrolling back and forth is a bit annoying. Let's pare this down a bit. How about we start by listing out the columns. Enter `csvcut -n nic[tab complete]`. 
+Ack. Not so good. We're getting the data in clean columns, but we're not getting a header row and it's hard to see. Let's clean that up a bit by piping the output of that command into a `less -S` command, which allows us to look at the data one page at a time. With `-S` we cut the lines off at the width of our terminal window, so we can organize things a bit. So you're going to type in `csvlook nic[tab complete] | less -S`. You can see the left and right arrows to see the full rows. Hit `q` to get out of that view.
 
-![csvcut screenshot](https://user-images.githubusercontent.com/6118900/27491841-cc344940-57f8-11e7-9192-781d0e7345bf.png)
+![csvlook screenshot](NEW URL)
 
-For our purposes, we probably don't need all 19 of these columns. Let's just ride with `Date`, `Time`, `Zip_Code`, `Neighborhood`, `Police_Zone`, `Incident_Description`, `Council_District`. Luckily CSVKit makes this very simple with the `csvcut` command using either the column numbers or the column names. Let's go with column numbers for now. So enter `csvcut -c 6,7,9,11,12,13,16 nic[tab complete]`.
+OK, now we're getting somewhere. We can cleanly see what we're working with, but it's still a bit much. Let's pare this down a bit. How about we start by listing out the columns. Enter `csvcut -n nic[tab complete]`.
 
-Notice what happens? Your computer is doing exactly what you're telling it to do: Cutting those columns from the original data set and printing them to the terminal window. We'd probably prefer those new columns are available to us in a new sheet. Using the `>` redirection command from above, let's take the previous command and use it to create a new CSV. Enter `csvcut -c 6,7,9,11,12,13,16 nicar17_unix.csv > pgh_crime_trimmed.csv`. If you enter the command and nothing happens, that's good! Now try `csvcut -n` on our new CSV, `pgh[tab complete]`.
+![csvcut screenshot](NEW URL)
 
-Ah ha! Now we're down to seven columns. That's a bit more manageable. Let's run some basic stats on these columns with the `csvstat` command. So, `csvstat pgh[tab complete].` This command quickly summarizes the data in our columns, giving us a quick overview of what we're working with. The `Date` and `Time` stats are all pretty similar, so that's not all that interesting in and of itself. But take a look at the `Zip_Code` data. 
+In this particular case there aren't too many columns so this is fairly simple. But we all know we've seen spreadsheets with so many columns it's hard to keep track. Luckily CSVKit makes solving this problem very simple with the `csvcut` command using either the column numbers or the column names. I don't really like the `113 Cause Name` column so I'm going to get rid of it. Enter `csvcut -c 1,3-6 nic[tab complete]`.
+
+[csvcut without redirect screenshot](NEW URL)
+
+Notice what happens? Your computer is doing exactly what you're telling it to do: Cutting that column from the original data set and printing the result of your command to the terminal window. We'd probably prefer those new columns are available to us in a new sheet. Using the `>` redirection command from above, let's take the previous command and use it to create a new CSV. Enter `csvcut -c 1,3-6 nic[tab complete] > death_data_trimmed.csv`. If you enter the command and nothing happens, that's good! Now try `csvcut -n` on our new CSV, `death_da[tab complete]`.
+
+[csvcut with redirect screenshot](NEW URL)
+
+Ah ha! Now this is a bit cleaner and more manageable. Let's run some basic stats on these columns with the `csvstat` command. So, `csvstat pgh[tab complete].` This command quickly summarizes the data in our columns, giving us a quick overview of what we're working with. The `Date` and `Time` stats are all pretty similar, so that's not all that interesting in and of itself. But take a look at the `Zip_Code` data.
 
 ![zipcode screenshot](https://user-images.githubusercontent.com/6118900/27492009-728e665e-57f9-11e7-9aed-d74cf5590be6.png)
 
-What's going on in 15212? The rest of the top five zips are roughly similar, but that one is significantly higher.  There are also noticeable leaders in `Neighborhood` (South Side Flats), `Police_Zone` (3), and perhaps the `Council_District` as well. 
+What's going on in 15212? The rest of the top five zips are roughly similar, but that one is significantly higher.  There are also noticeable leaders in `Neighborhood` (South Side Flats), `Police_Zone` (3), and perhaps the `Council_District` as well.
 
 Interesting. Obviously you're not going to write a story relying only on this super quick analysis. But within a few minutes we already have a decent idea of what we're working with and potential angles for further research and reporting. We can apply the same idea on a more granular level.
 
-Let's focus on the 15212 zip code, which includes major attractions like PNC Park and Heinz Field, but also a series of neighborhoods undergoing gentrification and a host of other issues. Run `csvgrep -c Zip_Code -m 15212 pgh_crime_trimmed.csv | csvlook`. Again, it's nice to be able to see your data on the screen, but we probably want that in its own CSV. So using the `>` redirection command, let's create a new file called `crime_15212.csv`. So that's `csvgrep -c Zip_Code -m 15212 pgh_crime_trimmed.csv > crime_15212.csv`. 
+Let's focus on the 15212 zip code, which includes major attractions like PNC Park and Heinz Field, but also a series of neighborhoods undergoing gentrification and a host of other issues. Run `csvgrep -c Zip_Code -m 15212 pgh_crime_trimmed.csv | csvlook`. Again, it's nice to be able to see your data on the screen, but we probably want that in its own CSV. So using the `>` redirection command, let's create a new file called `crime_15212.csv`. So that's `csvgrep -c Zip_Code -m 15212 pgh_crime_trimmed.csv > crime_15212.csv`.
 
 Let's organize this a bit using `csvsort`. Type in `csvsort -c Date crime_15212.csv | csvlook`. This will let us quickly sort through our list sorted on the `Date` column. You could sort on any column you'd like this way. Try `csvsort -c Neighborhood crime[tab complete] | csvlook`. Let's get the top five list of the neighborhoods that show up in our list. Run `csvstat -c 4 --freq crime[tab complete] | csvlook`. Already we see that for this period of time, East Allegheny had 20 more incidents than the next highest neighborhood, Brighton Heights. A thread to follow for sure.
 
-How about we run the same query on the `Incident_Description` column to get a handle on the type of crimes going down. Run `csvstat -c 6 --freq crime_15212.csv | csvlook`. The `99` code refers to miscellaneous crime, so it's hard to know what to make of that. But we see that `HIT AND RUN` makes the top of the list. Why does that category lead the list in the 15212 zip code? 
+How about we run the same query on the `Incident_Description` column to get a handle on the type of crimes going down. Run `csvstat -c 6 --freq crime_15212.csv | csvlook`. The `99` code refers to miscellaneous crime, so it's hard to know what to make of that. But we see that `HIT AND RUN` makes the top of the list. Why does that category lead the list in the 15212 zip code?
 
-Again, this data needs to be vetted, checked against your sources, and treated with a grain of salt. But, *in just a matter of minutes* you have a decent grasp on threads your data is starting to reveal, and you have some things you can begin to look into. 
+Again, this data needs to be vetted, checked against your sources, and treated with a grain of salt. But, *in just a matter of minutes* you have a decent grasp on threads your data is starting to reveal, and you have some things you can begin to look into.
 
 This was a *very* basic runthrough of what CSVKit can do. I would highly recommend running through [the full CSVKit tutorial](https://csvkit.readthedocs.io/en/1.0.1/tutorial.html) which will introduce you to more powerful tools available, including merging datasets, running SQL queries, and getting your data into a web-ready format.
 
