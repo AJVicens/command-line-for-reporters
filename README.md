@@ -129,7 +129,7 @@ Notice what happens? Your computer is doing exactly what you're telling it to do
 
 If you enter the command and nothing happens, that's good! Now try `csvcut -n` on our new CSV, `death_da[tab complete]`.
 
-[csvcut with redirect screenshot](NEW URL)
+[csvcut with redirect screenshot](https://raw.githubusercontent.com/AJVicens/command-line-for-reporters/master/Screen%20Shot%202019-03-09%20at%2012.52.24%20AM.png)
 
 Ah ha! Now this is a bit cleaner and more manageable. Let's run some basic stats on these columns with the `csvstat` command. So, `csvstat pgh[tab complete].` This command quickly summarizes the data in our columns, giving us a quick overview of what we're working with. The `Date` and `Time` stats are all pretty similar, so that's not all that interesting in and of itself. But take a look at the `Zip_Code` data.
 
