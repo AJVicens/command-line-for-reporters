@@ -116,7 +116,7 @@ Ack. Not so good. We're getting the data in clean columns, but we're not getting
 
 OK, now we're getting somewhere. We can cleanly see what we're working with, but it's still a bit much. Let's pare this down a bit. How about we start by listing out the columns. Enter `csvcut -n nic[tab complete]`.
 
-![csvcut screenshot](NEW URL)
+![csvcut screenshot](https://raw.githubusercontent.com/AJVicens/command-line-for-reporters/master/csv_cut_nicar19.png)
 
 In this particular case there aren't too many columns so this is fairly simple. But we all know we've seen spreadsheets with so many columns it's hard to keep track. Luckily CSVKit makes solving this problem very simple with the `csvcut` command using either the column numbers or the column names. I don't really like the `113 Cause Name` column so I'm going to get rid of it. Enter `csvcut -c 1,3-6 nic[tab complete]`.
 
