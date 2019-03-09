@@ -108,7 +108,7 @@ The data set breaks down the rates by leading causes of death by state by year. 
 
 Let's compare that to a quick peek from CSVKit. Type `csvlook nic[tab complete]`.
 
-[ADD IN SCREENSHOT OF CSVLOOK]
+![csvlook nicar 19](https://raw.githubusercontent.com/AJVicens/command-line-for-reporters/master/csvlook_ss.png)
 
 Ack. Not so good. We're getting the data in clean columns, but we're not getting a header row and it's hard to see. Let's clean that up a bit by piping the output of that command into a `less -S` command, which allows us to look at the data one page at a time. With `-S` we cut the lines off at the width of our terminal window, so we can organize things a bit. So you're going to type in `csvlook nic[tab complete] | less -S`. You can see the left and right arrows to see the full rows. Hit `q` to get out of that view.
 
