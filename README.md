@@ -100,7 +100,7 @@ Let's get out of our `QuickTest` directory with `cd ..`. Now let's remove that f
 That was just a quick example to show how we can create directories, files, files within directories, and then remove them.
 
 #### Let's jump in to CSVKit.
-For my quick tutorial we'll be using CDC data listing the age-adjusted death rates for the leading causes of death in the US between 1999 and 2016 [see more here](https://healthdata.gov/dataset/nchs-leading-causes-death-united-states). The file we'll start with is called [NEW NAME FOR DATA SET](ENTER UPLOAD URL FOR NEW DATA SET). To get the raw data, click on the file name in the main repo, click `Raw` to get the raw data, and then save-as with whatever file name you want in the `.csv` format.
+For my quick tutorial we'll be using CDC data listing the age-adjusted death rates for the leading causes of death in the US between 1999 and 2016 [see more here](https://healthdata.gov/dataset/nchs-leading-causes-death-united-states). The file we'll start with is called [nicar_19_health.csv](ENTER UPLOAD URL FOR NEW DATA SET). To get the raw data, click on the file name in the main repo, click `Raw` to get the raw data, and then save-as with whatever file name you want in the `.csv` format.
 
 The data set breaks down the rates by leading causes of death by state by year. You could always open Excel to peek at your data:
 
