@@ -104,7 +104,7 @@ For my quick tutorial we'll be using CDC data listing the age-adjusted death rat
 
 The data set breaks down the rates by leading causes of death by state by year. You could always open Excel to peek at your data:
 
-![excel screenshot](NEED NEW SCREENSHOT LINK)
+![excel screenshot](https://raw.githubusercontent.com/AJVicens/command-line-for-reporters/master/excel_ss_nicar19.png)
 
 Let's compare that to a quick peek from CSVKit. Type `csvlook nic[tab complete]`.
 
