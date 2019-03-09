@@ -122,7 +122,12 @@ In this particular case there aren't too many columns so this is fairly simple. 
 
 ![csvcut without redirect screenshot](https://github.com/AJVicens/command-line-for-reporters/blob/master/Screen%20Shot%202019-03-09%20at%2012.46.56%20AM.png)
 
-Notice what happens? Your computer is doing exactly what you're telling it to do: Cutting that column from the original data set and printing the result of your command to the terminal window. We'd probably prefer those new columns are available to us in a new sheet. Using the `>` redirection command from above, let's take the previous command and use it to create a new CSV. Enter `csvcut -c 1,3-6 nic[tab complete] > death_data_trimmed.csv`. If you enter the command and nothing happens, that's good! Now try `csvcut -n` on our new CSV, `death_da[tab complete]`.
+Notice what happens? Your computer is doing exactly what you're telling it to do: Cutting that column from the original data set and printing the result of your command to the terminal window. We'd probably prefer those new columns are available to us in a new sheet. Using the `>` redirection command from above, let's take the previous command and use it to create a new CSV. Enter `csvcut -c 1,3-6 nic[tab complete] > death_data_trimmed.csv`.
+
+![csvcut for trimmed command](https://raw.githubusercontent.com/AJVicens/command-line-for-reporters/master/Screen%20Shot%202019-03-09%20at%2012.49.55%20AM.png)
+
+
+If you enter the command and nothing happens, that's good! Now try `csvcut -n` on our new CSV, `death_da[tab complete]`.
 
 [csvcut with redirect screenshot](NEW URL)
 
