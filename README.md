@@ -120,7 +120,7 @@ OK, now we're getting somewhere. We can cleanly see what we're working with, but
 
 In this particular case there aren't too many columns so this is fairly simple. But we all know we've seen spreadsheets with so many columns it's hard to keep track. Luckily CSVKit makes solving this problem very simple with the `csvcut` command using either the column numbers or the column names. I don't really like the `113 Cause Name` column so I'm going to get rid of it. Enter `csvcut -c 1,3-6 nic[tab complete]`.
 
-[csvcut without redirect screenshot](NEW URL)
+![csvcut without redirect screenshot](https://github.com/AJVicens/command-line-for-reporters/blob/master/Screen%20Shot%202019-03-09%20at%2012.46.56%20AM.png)
 
 Notice what happens? Your computer is doing exactly what you're telling it to do: Cutting that column from the original data set and printing the result of your command to the terminal window. We'd probably prefer those new columns are available to us in a new sheet. Using the `>` redirection command from above, let's take the previous command and use it to create a new CSV. Enter `csvcut -c 1,3-6 nic[tab complete] > death_data_trimmed.csv`. If you enter the command and nothing happens, that's good! Now try `csvcut -n` on our new CSV, `death_da[tab complete]`.
 
