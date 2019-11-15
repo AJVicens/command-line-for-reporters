@@ -1,7 +1,7 @@
 # Favorite Command Line Tools
-### Command line for reporters (Unix)
+### Command line for reporters
 
-There are a lot of things anyone can do through the command line. But for reporters there are some key commands and command line-based tools that can improve efficiency and make life a whole lot easier. Using the command line isn't coding in the way that writing in Python or Javascript or Ruby is, but mastering the command line is a good introduction to that world and a step toward learning and using those languages.
+Anyone can do a lot with a computer through its command line. But reporters—who spend an unnatural and likely unhealthy amount of time with their computers—there are some key commands and command line-based tools that can make life a whole lot easier. Using the command line isn't coding in the way that writing in Python or Javascript or C++ is, but mastering it is a good introduction to that world, a step toward learning and using those languages, and a way that anyone can do a whole lot more with their computer.
 
 ### First things first: What is the "command line"?
 
