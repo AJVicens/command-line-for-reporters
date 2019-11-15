@@ -104,33 +104,33 @@ For my quick tutorial we'll be using crime data from the city of Pittsburgh. The
 
 The data set includes various codes used by the city, location data, crime codes, and other information that could come in handy depending on what you're trying to do. You could always open Excel to peek at your data:
 
-![excel screenshot](https://raw.githubusercontent.com/AJVicens/command-line-for-reporters/master/Screen%20Shot%202019-03-09%20at%202.15.08%20AM.png)
+![excel screenshot](images/Screen%20Shot%202019-03-09%20at%202.15.08%20AM.png)
 
 Let's compare that to a quick peek from CSVKit. Type `csvlook n19[tab complete]`.
 
-![csvlook raw screenshot](https://raw.githubusercontent.com/AJVicens/command-line-for-reporters/master/csvlook_rawn19.png)
+![csvlook raw screenshot](images/csvlook_rawn19.png)
 
 Ack. Not so good. Let's clean that up a bit by piping the output of that command into a `less -S` command, which allows us to look at the data one page at a time. With `-S` we cut the lines off at the width of our terminal window, so we can organize things a bit. So you're going to type in `csvlook n19[tab complete] | less -S`. You can see the left and right arrows to see the full rows. Hit `q` to get out of that view.
 
-![csvlook screenshot](https://github.com/AJVicens/command-line-for-reporters/blob/master/csvlook_lessn19.png?raw=true)
+![csvlook screenshot](images/csvlook_lessn19.png?raw=true)
 
 OK, now we're getting somewhere. We can cleanly see what we're working with, but scrolling back and forth is a bit annoying. Let's pare this down a bit. How about we start by listing out the columns. Enter `csvcut -n n19[tab complete]`.
 
-![csvcut screenshot](https://raw.githubusercontent.com/AJVicens/command-line-for-reporters/master/csvcut_fulln19.png)
+![csvcut screenshot](images/csvcut_fulln19.png)
 
 For our purposes, we probably don't need all 19 of these columns. Let's just ride with `Date`, `Time`, `Zip_Code`, `Neighborhood`, `Police_Zone`, `Incident_Description`, `Council_District`. Luckily CSVKit makes this very simple with the `csvcut` command using either the column numbers or the column names. Let's go with column numbers for now. So enter `csvcut -c 6,7,9,11,12,13,16 n19[tab complete]`.
 
 Notice what happens? Your computer is doing exactly what you're telling it to do: Cutting those columns from the original data set and printing them to the terminal window.
 
-![csvcut no redirect screenshot](https://raw.githubusercontent.com/AJVicens/command-line-for-reporters/master/csvcut_noredirectn19.png)
+![csvcut no redirect screenshot](images/csvcut_noredirectn19.png)
 
 We'd probably prefer those new columns are available to us in a new sheet. Using the `>` redirection command from above, let's take the previous command and use it to create a new CSV. Enter `csvcut -c 6,7,9,11,12,13,16 n19_pitt.csv > pgh_crime_trimmed.csv`. If you enter the command and nothing happens, that's good! Now try `csvcut -n` on our new CSV, `pgh[tab complete]`.
 
-![csvcut on new trimmed file](https://raw.githubusercontent.com/AJVicens/command-line-for-reporters/master/csvcut_pghtrimss.png)
+![csvcut on new trimmed file](images/csvcut_pghtrimss.png)
 
 Ah ha! Now we're down to seven columns. That's a bit more manageable. Let's run some basic stats on these columns with the `csvstat` command. So, `csvstat pgh[tab complete].` This command quickly summarizes the data in our columns, giving us a quick overview of what we're working with. The `Date` and `Time` stats are all pretty similar, so that's not all that interesting in and of itself. But take a look at the `Zip_Code` data.
 
-![zipcode screenshot](https://raw.githubusercontent.com/AJVicens/command-line-for-reporters/master/zipn19ss.png)
+![zipcode screenshot](images/zipn19ss.png)
 
 What's going on in 15212? The rest of the top five zips are roughly similar, but that one is significantly higher.  There are also noticeable leaders in `Neighborhood` (South Side Flats), `Police_Zone` (3), and perhaps the `Council_District` as well.
 
@@ -138,25 +138,25 @@ Interesting. Obviously you're not going to write a story relying only on this su
 
 Let's focus on the 15212 zip code, which includes major attractions like PNC Park and Heinz Field, but also a series of neighborhoods undergoing gentrification and a host of other issues. Run `csvgrep -c Zip_Code -m 15212 pgh_crime_trimmed.csv | csvlook -I`. Again, it's nice to be able to see your data on the screen, but we probably want that in its own CSV. So using the `>` redirection command, let's create a new file called `crime_15212.csv`. So that's `csvgrep -c Zip_Code -m 15212 pgh_crime_trimmed.csv > crime_15212.csv`.
 
-![grouped zip screenshot](https://raw.githubusercontent.com/AJVicens/command-line-for-reporters/master/15212ssn19.png)
+![grouped zip screenshot](images/15212ssn19.png)
 
 Let's organize this a bit using `csvsort`. Type in `csvsort -c Date crime_15212.csv | csvlook -I`. This will let us quickly sort through our list sorted on the `Date` column.
 
-![date grouped screenshot](https://raw.githubusercontent.com/AJVicens/command-line-for-reporters/master/15212_date_groupedn19.png)
+![date grouped screenshot](images/15212_date_groupedn19.png)
 
 You could sort on any column you'd like this way. Try `csvsort -c Neighborhood crime[tab complete] | csvlook`.
 
-![neighborhood grouped screenshot](https://raw.githubusercontent.com/AJVicens/command-line-for-reporters/master/15212_nbn19.png)
+![neighborhood grouped screenshot](images/15212_nbn19.png)
 
 Let's get the top five list of the neighborhoods that show up in our list. Run `csvstat -c 4 --freq crime[tab complete] | csvlook`.
 
-![frequency by neighborhood screenshot](https://raw.githubusercontent.com/AJVicens/command-line-for-reporters/master/freq_nb_n19.png)
+![frequency by neighborhood screenshot](images/freq_nb_n19.png)
 
 Already we see that for this period of time, East Allegheny had 20 more incidents than the next highest neighborhood, Brighton Heights. A thread to follow for sure.
 
 How about we run the same query on the `Incident_Description` column to get a handle on the type of crimes going down. Run `csvstat -c 6 --freq crime_15212.csv | csvlook`.
 
-![crime frequency screenshot](https://raw.githubusercontent.com/AJVicens/command-line-for-reporters/master/crime_freq_n19.png)
+![crime frequency screenshot](images/crime_freq_n19.png)
 
 The `99` code refers to miscellaneous crime, so it's hard to know what to make of that. But we see that `HIT AND RUN` makes the top of the list. Why does that category lead the list in the 15212 zip code?
 
