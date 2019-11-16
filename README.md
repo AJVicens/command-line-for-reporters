@@ -1,11 +1,11 @@
 # Favorite Command Line Tools
-### Command line for reporters
+### Command line for reporters (Mac, Linux)
 
 Anyone can do a lot with a computer through its command line. But reporters—who spend an unnatural and likely unhealthy amount of time with their computers—there are some key commands and command line-based tools that can make life a whole lot easier. Using the command line isn't coding in the way that writing in Python or Javascript or C++ is, but mastering it is a good introduction to that world, a step toward learning and using those languages, and a way that anyone can do a whole lot more with their computer.
 
 ### First things first: What is the "command line"?
 
-The command line is the place where you can give your computer text commands that your computer will then attempt to execute. Unlike a typical graphical user interface (GUI) — where you drag a cursor around with a mouse and click into folders and on applications to launch them — the command line takes typed commands. You might think it's more efficient to use your mouse and click around to get into folders and launch apps, but once you get the hang of simple text commands to do everything from launching programs to working with files you'll see how much more efficient the command line can be.
+The command line is the place where you can give your computer text commands that your computer will then attempt to execute. Unlike a typical graphical user interface (GUI)—where you drag a cursor around with a mouse and click into folders and on applications to launch them—the command line takes typed commands. You might think it's more efficient to use your mouse and click around to get into folders and launch apps, but once you get the hang of simple text commands to do everything from launching programs to working with files you'll see how much more efficient the command line can be.
 
 On your Mac, enter `command + spacebar` and type `Terminal` into the search bar. That will launch `Terminal.app`.
 
@@ -16,6 +16,10 @@ There are ways to customize the way your Terminal looks and many people use alte
 Once you have the terminal launched you'll see the date of the last time you launched the terminal, followed on the next line by the name of your computer, the location within that computer, and the user. In this case my computer is called `AJs-MacBook-Pro`, I'm in my home directory (marked by the `~`) and my username is `ajvicens`. The dollar sign `$` is the prompt denoting that the system is ready for you to enter a command.
 
 ![terminal screenshot](images/terminal_open_ss.png)
+
+### Before we go any further: Why should you learn this?
+
+You're likely asking yourself 
 
 ### Some basic navigation tips and quick commands
 #### `man`, `pwd`, `cd`, `ls`, `cp`, `mv`, `cat`, `ctrl + a`, `ctrl + e`, `|`, `>`, `>>`, `clear`, *tab complete*
