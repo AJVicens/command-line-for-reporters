@@ -128,7 +128,7 @@ Ack. Not so good. Let's clean that up a bit by piping the output of that command
 
 ![csvlook screenshot](images/uk_csvlook_less_ss.png)
 
-OK, now we're getting somewhere. We can cleanly see what we're working with, but scrolling back and forth is a bit annoying. Let's pare this down a bit. How about we start by listing out the columns. Enter `csvcut -n n19[tab complete]`.
+OK, now we're getting somewhere. We can cleanly see what we're working with, but scrolling back and forth is a bit annoying. Let's pare this down a bit. How about we start by listing out the columns. Enter `csvcut -n 2019[tab complete]`.
 
 ![csvcut screenshot](images/csvcut_fulln19.png)
 
