@@ -118,7 +118,9 @@ The data set includes various codes used by the city, location data, crime codes
 
 ![excel screenshot](images/uk_excel_ss.png)
 
-Let's compare that to a quick peek from CSVKit. Type `csvlook 2019[tab complete]`.
+How many rows are in this spreadsheet? You can count manually in Excel, sure. Or, in the command line, you could type `wc -l 2019[tab complete]` and see that there are 86,075 rows very quickly (it doesn't count the header row). You'll come to learn that cruising around in the command line can be very quick.
+
+Ok, so let's try CSVKit. For a quick peek at that file, type `csvlook 2019[tab complete]`.
 
 ![csvlook raw screenshot uk](images/images/uk_excel_ss.png)
 
