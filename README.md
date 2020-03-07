@@ -112,7 +112,7 @@ Let's get out of our `QuickTest` directory with `cd ..`. Now let's remove that f
 That was just a quick example to show how we can create directories, files, files within directories, and then remove them.
 
 #### Let's jump in to CSVKit.
-For my quick tutorial we'll be using crime data from the city of Pittsburgh. The file we'll start with is called [2019-12-metropolitan-street.csv](https://github.com/AJVicens/command-line-for-reporters/blob/master/2019-12-metropolitan-street.csv). To get the raw data, click on the file name in the main repo, click `Raw` to get the raw data, and then save-as with whatever file name you want in the `.csv` format.
+For my quick tutorial we'll be using crime data from December 2019 collected by the British government about [policing in the UK](https://data.police.uk/). The file we'll start with is called [2019-12-metropolitan-street.csv](https://github.com/AJVicens/command-line-for-reporters/blob/master/2019-12-metropolitan-street.csv). To get the raw data, click on the file name in the main repo, click `Raw` to get the raw data, and then save-as with whatever file name you want in the `.csv` format.
 
 The data set includes various codes used by the city, location data, crime codes, and other information that could come in handy depending on what you're trying to do. You could always open Excel to peek at your data:
 
@@ -132,11 +132,11 @@ OK, now we're getting somewhere. We can cleanly see what we're working with, but
 
 ![csvcut screenshot](images/csvcut_uk_ss.png)
 
-For our purposes, we probably don't need all 19 of these columns. Let's just ride with `Date`, `Time`, `Zip_Code`, `Neighborhood`, `Police_Zone`, `Incident_Description`, `Council_District`. Luckily CSVKit makes this very simple with the `csvcut` command using either the column numbers or the column names. Let's go with column numbers for now. So enter `csvcut -c 6,7,9,11,12,13,16 n19[tab complete]`.
+For our purposes, we probably don't need all 12 of these columns. Let's just ride with `5,6,7,10,11`. Luckily CSVKit makes this very simple with the `csvcut` command using either the column numbers or the column names. Let's go with column numbers for now. So enter `csvcut -c 5,6,7,10,11 2019[tab complete]`.
 
 Notice what happens? Your computer is doing exactly what you're telling it to do: Cutting those columns from the original data set and printing them to the terminal window.
 
-![csvcut no redirect screenshot](images/csvcut_noredirectn19.png)
+![csvcut no redirect screenshot](images/csvcut_uk_ss.png)
 
 We'd probably prefer those new columns are available to us in a new sheet. Using the `>` redirection command from above, let's take the previous command and use it to create a new CSV. Enter `csvcut -c 6,7,9,11,12,13,16 n19_pitt.csv > pgh_crime_trimmed.csv`. If you enter the command and nothing happens, that's good! Now try `csvcut -n` on our new CSV, `pgh[tab complete]`.
 
