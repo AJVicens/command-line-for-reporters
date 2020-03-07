@@ -1,4 +1,4 @@
-# Favorite Command Line Tools
+# The command line is your friend
 ### Command line for reporters (Mac, Linux)
 
 Anyone can do a lot with a computer through its command line. But reporters—who spend an unnatural and likely unhealthy amount of time with their computers—there are some key commands and command line-based tools that can make life a whole lot easier. Using the command line isn't coding in the way that writing in Python or Javascript or C++ is, but mastering it is a good introduction to that world, a step toward learning and using those languages, and a way that anyone can do a whole lot more with their computer.
