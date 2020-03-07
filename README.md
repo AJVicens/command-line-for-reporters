@@ -146,7 +146,7 @@ Ah ha! Now we're down to five columns. That's a bit more manageable. Let's run s
 
 ![stats screenshot](images/uk_stats_ss.png)
 
-What's going on in 15212? The rest of the top five zips are roughly similar, but that one is significantly higher.  There are also noticeable leaders in `Neighborhood` (South Side Flats), `Police_Zone` (3), and perhaps the `Council_District` as well.
+Now we have a quick idea that there are nearly 21,000 unique locations, with the leading one being "On or near Supermarket" coming in at 3,254 total.
 
 Interesting. Obviously you're not going to write a story relying only on this super quick analysis. But within a few minutes we already have a decent idea of what we're working with and potential angles for further research and reporting. We can apply the same idea on a more granular level.
 
