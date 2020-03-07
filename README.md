@@ -160,7 +160,7 @@ So it'll look like this: `csvcut -c 1-5 uk_crime_trimmed.csv | csvgrep -c Locati
 
 Now, let's run `csvstat` on our new sheet: `csvstat uk_supe[tab complete]`.
 
-![grouped zip screenshot](images/15212ssn19.png)
+![supermarket stats new sheet screenshot](images/uk_supermarket_stat_final.png)
 
 Let's organize this a bit using `csvsort`. Type in `csvsort -c Date crime_15212.csv | csvlook -I`. This will let us quickly sort through our list sorted on the `Date` column.
 
