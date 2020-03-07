@@ -116,9 +116,9 @@ For my quick tutorial we'll be using crime data from the city of Pittsburgh. The
 
 The data set includes various codes used by the city, location data, crime codes, and other information that could come in handy depending on what you're trying to do. You could always open Excel to peek at your data:
 
-![excel screenshot](images/Screen%20Shot%202019-03-09%20at%202.15.08%20AM.png)
+![excel screenshot](images/uk_excel_ss.png)
 
-Let's compare that to a quick peek from CSVKit. Type `csvlook n19[tab complete]`.
+Let's compare that to a quick peek from CSVKit. Type `csvlook 2019[tab complete]`.
 
 ![csvlook raw screenshot uk](images/images/uk_excel_ss.png)
 
