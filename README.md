@@ -130,7 +130,7 @@ Ack. Not so good. Let's clean that up a bit by piping the output of that command
 
 OK, now we're getting somewhere. We can cleanly see what we're working with, but scrolling back and forth is a bit annoying. Let's pare this down a bit. How about we start by listing out the columns. Enter `csvcut -n 2019[tab complete]`.
 
-![csvcut screenshot](images/csvcut_uk_ss.png)
+![csvcut screenshot](images/uk_csvcut_n_ss.png)
 
 For our purposes, we probably don't need all 12 of these columns. Let's just ride with `5,6,7,10,11`. Luckily CSVKit makes this very simple with the `csvcut` command using either the column numbers or the column names. Let's go with column numbers for now. So enter `csvcut -c 5,6,7,10,11 2019[tab complete]`.
 
