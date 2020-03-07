@@ -150,11 +150,15 @@ Now we have a quick idea that there are nearly 21,000 unique locations, with the
 
 Interesting. Obviously you're not going to write a story relying only on this super quick analysis. But within a few minutes we already have a decent idea of what we're working with and potential angles for further research and reporting. We can apply the same idea on a more granular level.
 
-I want to dig in a bit on the type of crimes that were reported "On or near Supermarket". Luckily we can do this very easily. First, let's grab all the rows that match "On or near Supermarket": `csvcut 1-5 uk_cri[tab complete] | csvgrep -c Location -m On or near Supermarket | csvsort -c Crime type -r | csvlook`
+I want to dig in a bit on the type of crimes that were reported "On or near Supermarket". Luckily we can do this very easily. First, let's grab all the rows that match "On or near Supermarket": `csvcut 1-5 uk_cri[tab complete] | csvgrep -c Location -m "On or near Supermarket" | csvsort -c "Crime type" -r | csvlook`
 
 ![Supermarket screenshot](images/uk_supermarket_ss.png)
 
-Let's focus on the 15212 zip code, which includes major attractions like PNC Park and Heinz Field, but also a series of neighborhoods undergoing gentrification and a host of other issues. Run `csvgrep -c Zip_Code -m 15212 pgh_crime_trimmed.csv | csvlook -I`. Again, it's nice to be able to see your data on the screen, but we probably want that in its own CSV. So using the `>` redirection command, let's create a new file called `crime_15212.csv`. So that's `csvgrep -c Zip_Code -m 15212 pgh_crime_trimmed.csv > crime_15212.csv`.
+So now we have data for just the supermarket location designation. We can break this off into it's own data set rather easily. If you press the `up` arrow you can cycle through your previous commands so you don't have to type that long string again. Do that until you come to that very long command we just did. Take off the last command and the pipe `| csvlook` (it'll help with formatting), and add the redirect `>` and a new filename like `uk_supermarket.csv`.
+
+So it'll look like this: `csvcut -c 1-5 uk_crime_trimmed.csv | csvgrep -c Location -m "On or near Supermarket" | csvsort -c "Crime type" -r > uk_supermarket.csv.`
+
+Now, let's run `csvstat` on our new sheet: `csvstat uk_supe[tab complete]`.
 
 ![grouped zip screenshot](images/15212ssn19.png)
 
