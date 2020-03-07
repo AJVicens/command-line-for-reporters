@@ -146,9 +146,14 @@ Ah ha! Now we're down to five columns. That's a bit more manageable. Let's run s
 
 ![stats screenshot](images/uk_stats_ss.png)
 
-Now we have a quick idea that there are nearly 21,000 unique locations, with the leading one being "On or near Supermarket" coming in at 3,254 total.
+Now we have a quick idea that there are nearly 21,000 unique locations, with the leading one being "On or near Supermarket" coming in at 3,254 total. We can also see that "Violence and sexual offences" were the most common crime logged in December 2019 (18,093), and the vast majority of the crimes -- 65,559 -- were categorized as still under investigation.
 
 Interesting. Obviously you're not going to write a story relying only on this super quick analysis. But within a few minutes we already have a decent idea of what we're working with and potential angles for further research and reporting. We can apply the same idea on a more granular level.
+
+I want to dig in a bit on the type of crimes that were reported "On or near Supermarket". 
+
+csvcut -c county,item_name,total_cost data.csv | csvgrep -c county -m LANCASTER | csvsort -c total_cost -r | csvlook
+
 
 Let's focus on the 15212 zip code, which includes major attractions like PNC Park and Heinz Field, but also a series of neighborhoods undergoing gentrification and a host of other issues. Run `csvgrep -c Zip_Code -m 15212 pgh_crime_trimmed.csv | csvlook -I`. Again, it's nice to be able to see your data on the screen, but we probably want that in its own CSV. So using the `>` redirection command, let's create a new file called `crime_15212.csv`. So that's `csvgrep -c Zip_Code -m 15212 pgh_crime_trimmed.csv > crime_15212.csv`.
 
