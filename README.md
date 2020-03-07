@@ -19,7 +19,9 @@ Once you have the terminal launched you'll see the date of the last time you lau
 
 ### Before we go any further: Why should you learn this?
 
-You're likely asking yourself QUE CARAJO
+You're likely asking yourself why you'd learn to use the command line. The short answer is that it's a rather powerful way to easily do all sorts of things with your computer. There are a whole host of free command-line tools relevant to the type of work we do, so long as you know a few basic commands. Once you level up slightly, you can write scripts to automate repetitive tasks. More theoretically, it's just a way to get direct access to you computer without the the graphics that we're all used to. You can go anywhere in the computer quickly. You modify files, open them, delete them, read them. You can connect to the internet, and you can see everything that's running (and kill programs, if need be).
+
+But for our purposes, it's a very easy way to access a suite of tools to make your job easier and more efficient. For example, if you want to download a bunch of video, there's a [tool](https://ytdl-org.github.io/youtube-dl/) for that. Want to scrape Instagram? [Here](https://instaloader.github.io/) you go. And this is truly just scraping the surface.
 
 ### Some basic navigation tips and quick commands
 #### `man`, `pwd`, `cd`, `ls`, `cp`, `mv`, `cat`, `ctrl + a`, `ctrl + e`, `|`, `>`, `>>`, `clear`, *tab complete*
