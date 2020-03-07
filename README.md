@@ -140,9 +140,9 @@ Notice what happens? Your computer is doing exactly what you're telling it to do
 
 We'd probably prefer those new columns are available to us in a new sheet. Using the `>` redirection command from above, let's take the previous command and use it to create a new CSV. Enter `csvcut -c 5,6,7,10,11 2019[tab complete] > uk_crime_trimmed.csv`. If you enter the command and nothing happens, that's good! Now try `csvcut -n` on our new CSV, `uk_cri[tab complete]`.
 
-![csvcut on new trimmed file](images/csvcut_pghtrimss.png)
+![csvcut on new trimmed file](images/uk_trimmed_csvcut_n.png)
 
-Ah ha! Now we're down to seven columns. That's a bit more manageable. Let's run some basic stats on these columns with the `csvstat` command. So, `csvstat pgh[tab complete].` This command quickly summarizes the data in our columns, giving us a quick overview of what we're working with. The `Date` and `Time` stats are all pretty similar, so that's not all that interesting in and of itself. But take a look at the `Zip_Code` data.
+Ah ha! Now we're down to five columns. That's a bit more manageable. Let's run some basic stats on these columns with the `csvstat` command. So, `csvstat uk_cri[tab complete].` This command quickly summarizes the data in our columns, giving us a quick overview of what we're working with. The `Date` and `Time` stats are all pretty similar, so that's not all that interesting in and of itself. But take a look at the `` data.
 
 ![zipcode screenshot](images/zipn19ss.png)
 
