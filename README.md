@@ -103,7 +103,9 @@ Now, let's create a file with the `touch` command. So, enter `touch testFile.txt
 
 Now, enter `ls`. What do you see? `testFile.txt` should be sitting there. Good work. Now let's put some words into the file. Enter `open tes[tab complete]`. A blank TextEdit file should open. Enter some text, save, and close the file.
 
-Now, type cat tes[tab complete]. What do you get? You should see whatever text you just saved into that file printed out to your Terminal. But, you know what? Maybe you want to scrap that file. Let's go ahead and remove it with the `rm` command. So enter `rm te[tab complete]`. Now enter `ls`. Should be empty. Nice work.
+Now, type cat tes[tab complete]. What do you get? You should see whatever text you just saved into that file printed out to your Terminal. Let's see how many words are in the file. Type `wc -w` `tes[tab complete]`. The `-w` portion of that command is what's called a flag, which customizes the way the command processes the file. In this case we're telling it to give us just the word count. Pretty neat! 
+
+But, you know what? Maybe you want to scrap that file. Let's go ahead and remove it with the `rm` command. So enter `rm te[tab complete]`. Now enter `ls`. Should be empty. Nice work.
 
 Let's get out of our `QuickTest` directory with `cd ..`. Now let's remove that folder with the `rmdir` command. So enter `rmdir Qui[tab complete].`
 
