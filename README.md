@@ -162,25 +162,7 @@ Now, let's run `csvstat` on our new sheet: `csvstat uk_supe[tab complete]`.
 
 ![supermarket stats new sheet screenshot](images/uk_supermarket_stat_final.png)
 
-Let's organize this a bit using `csvsort`. Type in `csvsort -c Date crime_15212.csv | csvlook -I`. This will let us quickly sort through our list sorted on the `Date` column.
-
-![date grouped screenshot](images/15212_date_groupedn19.png)
-
-You could sort on any column you'd like this way. Try `csvsort -c Neighborhood crime[tab complete] | csvlook`.
-
-![neighborhood grouped screenshot](images/15212_nbn19.png)
-
-Let's get the top five list of the neighborhoods that show up in our list. Run `csvstat -c 4 --freq crime[tab complete] | csvlook`.
-
-![frequency by neighborhood screenshot](images/freq_nb_n19.png)
-
-Already we see that for this period of time, East Allegheny had 20 more incidents than the next highest neighborhood, Brighton Heights. A thread to follow for sure.
-
-How about we run the same query on the `Incident_Description` column to get a handle on the type of crimes going down. Run `csvstat -c 6 --freq crime_15212.csv | csvlook`.
-
-![crime frequency screenshot](images/crime_freq_n19.png)
-
-The `99` code refers to miscellaneous crime, so it's hard to know what to make of that. But we see that `HIT AND RUN` makes the top of the list. Why does that category lead the list in the 15212 zip code?
+You can see that we now have just one location, and the number -- 3,254 -- matches the stats from when we ran this the first time. We can see that the data includes 14 unique types of crime, the most common of which is "Violence and sexual offense" (544) followed closely by "Shoplifting" (531). There's also a lot of "Anti-social behavior". Interesting.
 
 Again, this data needs to be vetted, checked against your sources, and treated with a grain of salt. But, *in just a matter of minutes* you have a decent grasp on threads your data is starting to reveal, and you have some things you can begin to look into.
 
@@ -194,6 +176,7 @@ It's really not that hard to pick up some command line skills. Just like anythin
 * Noah Veltman's [Command Line Murders](https://github.com/veltman/clmystery)
 * [O'Reilly's "Linux Pocket Guide"](http://shop.oreilly.com/product/0636920023029.do?green=B78D23C2-6E87-58C8-BAE1-0090A206787F&intcmp=af-mybuy-0636920023029.IP)
 * Take a spin through some of the past NICAR command line instructions, including those put together by [Chris Keller, Jue Yang (and me)](https://github.com/chrislkeller/nicar15-command-line-basics), and another by [Kendall Taggart and Agustin Armendariz](https://github.com/armendariz/terminal_recipes).
-* [Hacknet](http://hacknet-os.com/), a fun little hacking video game that's entirely played within a simulated terminal window.  
+* [Hacknet](http://hacknet-os.com/), a fun little hacking video game that's entirely played within a simulated terminal window.
+* [Indiana University](https://kb.iu.edu/d/apek) Unix basics (an online command line tutorial).  
 
 * Google: Don't underestimate the power of Google or any other search engine. You may feel like you're the only one having issues, but you're not. Many before you have done the same exact thing, and a lot of those people have either written about it or created tutorial videos.
