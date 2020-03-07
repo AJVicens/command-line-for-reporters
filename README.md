@@ -122,7 +122,7 @@ How many rows are in this spreadsheet? You can count manually in Excel, sure. Or
 
 Ok, so let's try CSVKit. For a quick peek at that file, type `csvlook 2019[tab complete]`.
 
-![csvlook raw screenshot uk](images/images/uk_excel_ss.png)
+![csvlook raw screenshot uk](images/uk_crime_csvlook_ss.png)
 
 Ack. Not so good. Let's clean that up a bit by piping the output of that command into a `less -S` command, which allows us to look at the data one page at a time. With `-S` we cut the lines off at the width of our terminal window, so we can organize things a bit. So you're going to type in `csvlook n19[tab complete] | less -S`. You can see the left and right arrows to see the full rows. Hit `q` to get out of that view.
 
