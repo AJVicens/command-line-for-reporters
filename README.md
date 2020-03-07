@@ -142,9 +142,9 @@ We'd probably prefer those new columns are available to us in a new sheet. Using
 
 ![csvcut on new trimmed file](images/uk_trimmed_csvcut_n.png)
 
-Ah ha! Now we're down to five columns. That's a bit more manageable. Let's run some basic stats on these columns with the `csvstat` command. So, `csvstat uk_cri[tab complete].` This command quickly summarizes the data in our columns, giving us a quick overview of what we're working with. The `Date` and `Time` stats are all pretty similar, so that's not all that interesting in and of itself. But take a look at the `` data.
+Ah ha! Now we're down to five columns. That's a bit more manageable. Let's run some basic stats on these columns with the `csvstat` command. So, `csvstat uk_cri[tab complete].` This command quickly summarizes the data in our columns, giving us a quick overview of what we're working with. The `Latitude` and `Longitude` statistics aren't all that telling, so there's no reason to focus there right now. But the `Location`, `Crime type`, and `Last outcome category` columns did return some basic counts that we can look at.
 
-![zipcode screenshot](images/zipn19ss.png)
+![stats screenshot](images/uk_stats_ss.png)
 
 What's going on in 15212? The rest of the top five zips are roughly similar, but that one is significantly higher.  There are also noticeable leaders in `Neighborhood` (South Side Flats), `Police_Zone` (3), and perhaps the `Council_District` as well.
 
