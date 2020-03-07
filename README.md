@@ -138,7 +138,7 @@ Notice what happens? Your computer is doing exactly what you're telling it to do
 
 ![csvcut no redirect screenshot](images/csvcut_uk_ss.png)
 
-We'd probably prefer those new columns are available to us in a new sheet. Using the `>` redirection command from above, let's take the previous command and use it to create a new CSV. Enter `csvcut -c 6,7,9,11,12,13,16 n19_pitt.csv > pgh_crime_trimmed.csv`. If you enter the command and nothing happens, that's good! Now try `csvcut -n` on our new CSV, `pgh[tab complete]`.
+We'd probably prefer those new columns are available to us in a new sheet. Using the `>` redirection command from above, let's take the previous command and use it to create a new CSV. Enter `csvcut -c 5,6,7,10,11 2019[tab complete] > uk_crime_trimmed.csv`. If you enter the command and nothing happens, that's good! Now try `csvcut -n` on our new CSV, `uk_cri[tab complete]`.
 
 ![csvcut on new trimmed file](images/csvcut_pghtrimss.png)
 
