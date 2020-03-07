@@ -19,7 +19,7 @@ Once you have the terminal launched you'll see the date of the last time you lau
 
 ### Before we go any further: Why should you learn this?
 
-You're likely asking yourself 
+You're likely asking yourself QUE CARAJO
 
 ### Some basic navigation tips and quick commands
 #### `man`, `pwd`, `cd`, `ls`, `cp`, `mv`, `cat`, `ctrl + a`, `ctrl + e`, `|`, `>`, `>>`, `clear`, *tab complete*
