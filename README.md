@@ -120,7 +120,7 @@ The data set includes various codes used by the city, location data, crime codes
 
 Let's compare that to a quick peek from CSVKit. Type `csvlook n19[tab complete]`.
 
-![csvlook raw screenshot](images/csvlook_rawn19.png)
+![csvlook raw screenshot uk](images/images/uk_excel_ss.png)
 
 Ack. Not so good. Let's clean that up a bit by piping the output of that command into a `less -S` command, which allows us to look at the data one page at a time. With `-S` we cut the lines off at the width of our terminal window, so we can organize things a bit. So you're going to type in `csvlook n19[tab complete] | less -S`. You can see the left and right arrows to see the full rows. Hit `q` to get out of that view.
 
