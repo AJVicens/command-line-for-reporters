@@ -37,7 +37,7 @@ Now that you have your Terminal app running, let's get the hang of some of the m
 
 *There are some files known as "hidden files" -- files that typically start with a `.` that are [used](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory) to store user preferences or perform other functions -- that won't show up with a basic `ls` command. To see those files, type `ls -a`.*
 
-`cp` `original_file` `new_file`: This command will copy a file. It's a good idea to use a distinct name for the file's copy, because if it a file already exists with that name, the file you're creating will overwite that file.
+`cp` `original_file` `new_file`: This command will copy a file. It's a good idea to use a distinct name for the file's copy, because if it a file already exists with that name, the file you're creating will overwrite that file.
 
 `mv`: This command will move a file from one location to another. It is also used to rename a file within the same directory. Again, pick a distinct name for your new file so you don't inadvertently overwrite an existing file. You can also use `mv -i` to force your system to ask for permission before overwriting an existing file.
 
@@ -84,6 +84,10 @@ The beautiful thing about the command line is the plethora of tools out there th
 `csvkit`: This is an amazing Python-based tool to help you work with CSV files on the command line. Written by [Chris Groskopf](https://twitter.com/onyxfish), CSVKit is a great way to get a handle on the data you have in a given spreadsheet, clean it up a bit, and get your story jump-started. I use this all the time and recommend it so highly that I think we'll run through a quick tutorial. Keep in mind that Chris writes extensive documentation for all of his tools, so please do head over to the [tutorial he's written](https://csvkit.readthedocs.io/en/1.0.1/). I'll provide an incredibly abridged version below.
 
 `dkimpy`: At NICAR 2019 I learned of a neat command line tool called `dkimpy` that allows a user to verify the authenticity of emails with one command ([read more here](https://www.propublica.org/nerds/authenticating-email-using-dkim-and-arc-or-how-we-analyzed-the-kasowitz-emails) via ProPublica's Jeremy B. Merrill).
+
+`Instaloader`: This tool allows for bulk downloading of Instagram content and metadata. It's very neat and handy. Go [take a look](https://instaloader.github.io/).
+
+`ping`: While professionals use this command for a [variety](https://www.tutorialspoint.com/unix_commands/ping.htm) of tasks, I use it to see if websites are up. It's very simple to use: `$ ping <website or IP address>`. Let it run for a few seconds and then enter `control-c` so it stops, and you can see that your traffic (referred to as "packets") is getting through.
 
 #### Let's quickly run through creating directories and files (and then removing them)
 
